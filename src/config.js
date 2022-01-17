@@ -5,15 +5,15 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "NFT";
-const description = "Remember to replace this description";
-const baseUri = "ipfs://NewUriToReplace";
-const external_link_name = "https://www.google.com/";
-const collectionName = "CollectionName";
+const namePrefix = "variant";
+const description = "Schmirus variant collection";
+const baseUri = "ipfs://generate-nfts-main/build/images/;
+const external_link_name = "https://www.schmirus.com/";
+const collectionName = "Schmirus";
 
 const solanaMetadata = {
   symbol: "YC",
-  seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
+  seller_fee_basis_points: 7000, // Define how much % you want from secondary market sales 1000 = 10%
   external_url: "https://www.youtube.com/c/hashlipsnft",
   creators: [
     {
@@ -26,15 +26,15 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 100,
+    growEditionSizeTo: 10,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Virus" },
+      { name: "Eyes" },
+      { name: "Mouth" },
+      { name: "Hat" },
+      { name: "Button" },
+      { name: "Extramask" },
     ],
   },
 ];
